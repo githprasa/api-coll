@@ -1,0 +1,11 @@
+meta {
+  name: all-vaccinations
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{auth_url}}/api/vaccinations
+  body: none
+  auth: inherit
+}

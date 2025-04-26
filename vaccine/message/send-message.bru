@@ -1,0 +1,22 @@
+meta {
+  name: send-message
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{auth_url}}/api/messages
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGNhN2IxMzVmODViNzBmNWYyYjRiMSIsInJvbGUiOiJwcm92aWRlciIsImlhdCI6MTc0NTY2MDE3MCwiZXhwIjoxNzQ2MjY0OTcwfQ.5hy7d6-jAZ4ggEGBZ7Boeee5EPpj_I70FlOAAdojJXk
+}
+
+body:json {
+  {
+    "receiverId": "680ca1b684a4434ae24cc485",
+    "message": "Hello, I have a question about my vaccination schedule"
+  }
+}

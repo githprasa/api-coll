@@ -1,0 +1,26 @@
+meta {
+  name: create-vaccination
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{auth_url}}/api/vaccinations
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGNhN2IxMzVmODViNzBmNWYyYjRiMSIsInJvbGUiOiJwcm92aWRlciIsImlhdCI6MTc0NTY1OTg1NCwiZXhwIjoxNzQ2MjY0NjU0fQ.ckG5RV9kHyRaa2EQJEVcTF5YSLH37HQJ6nTlmDq7T2o
+}
+
+body:json {
+  {
+    "patientId": "680ca1b684a4434ae24cc485",
+    "vaccineName": "COVID-19 Vaccine",
+    "vaccinationDate": "2024-04-26T10:00:00Z",
+    "nextDoseDue": "2024-05-26T10:00:00Z",
+    "status": "pending",
+    "notes": "First dose administered"
+  }
+}

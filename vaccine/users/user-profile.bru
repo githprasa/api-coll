@@ -1,0 +1,15 @@
+meta {
+  name: /user-profile
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{auth_url}}/api/users/profile
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGNhMWI2ODRhNDQzNGFlMjRjYzQ4NSIsInJvbGUiOiJwYXRpZW50IiwiaWF0IjoxNzQ1NjU5NDA2LCJleHAiOjE3NDYyNjQyMDZ9.LytMsfLQNJxzFo5VcIANIphRX0ot2QNTgEA53ph5hgA
+}

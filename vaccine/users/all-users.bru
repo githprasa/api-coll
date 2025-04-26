@@ -1,0 +1,19 @@
+meta {
+  name: /all-users
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{auth_url}}/api/users?role=provider
+  body: none
+  auth: bearer
+}
+
+params:query {
+  role: provider
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGNhN2IxMzVmODViNzBmNWYyYjRiMSIsInJvbGUiOiJwcm92aWRlciIsImlhdCI6MTc0NTY2MTU2NiwiZXhwIjoxNzQ2MjY2MzY2fQ.nFPbUfdU3MTx2bt-aooBQwd6l5MyBI3FIu1ttM1RNMg
+}

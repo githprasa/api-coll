@@ -1,0 +1,15 @@
+meta {
+  name: Get all conversations
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{auth_url}}/api/messages/conversations
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGNhMWI2ODRhNDQzNGFlMjRjYzQ4NSIsInJvbGUiOiJwYXRpZW50IiwiaWF0IjoxNzQ1NjYxMzU4LCJleHAiOjE3NDYyNjYxNTh9.YDRjh6SjiOe1bCqwo4HH-GhUxVyNXSxgh5qNEut4m7w
+}

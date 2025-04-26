@@ -1,0 +1,22 @@
+meta {
+  name: update-vaccination
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{auth_url}}/api/vaccinations/680caa9435f85b70f5f2b4bb
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MGNhN2IxMzVmODViNzBmNWYyYjRiMSIsInJvbGUiOiJwcm92aWRlciIsImlhdCI6MTc0NTY1OTg1NCwiZXhwIjoxNzQ2MjY0NjU0fQ.ckG5RV9kHyRaa2EQJEVcTF5YSLH37HQJ6nTlmDq7T2o
+}
+
+body:json {
+  {
+    "status": "completed",
+    "notes": "Second dose completed"
+  }
+}
